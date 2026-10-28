@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beat Lab | Music Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">YOUR MUSIC, YOUR WORLD</p>
+    <h1>BEAT<span>LAB.</span></h1>
+    <p class="subtitle">Turn sound into something you can see.</p>
+
+    <section class="player">
+      <label for="audioFile" class="upload">
+        ＋ Upload your song
+      </label>
+      <input type="file" id="audioFile" accept="audio/*">
+
+      <p id="fileName">No song selected yet</p>
+
+      <audio id="audio" controls></audio>
+
+      <canvas id="visualizer"></canvas>
+
+      <p class="hint">Upload a song, press play, and watch the beat.</p>
+    </section>
+
+    <footer>MADE WITH MUSIC & CODE ♫</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
